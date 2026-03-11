@@ -1,0 +1,15 @@
+* {
+    bg-col:  #1e1e2e;        /* Base */
+    bg-col-light: #313244;   /* Surface0 */
+    border-col: #45475a;     /* Surface1 */
+    selected-col: #b4befe;   /* Lavander */
+
+    blue: #89b4fa;           /* Blue */
+
+    fg-col: #cdd6f4;         /* Text */
+    fg-col2: #bac2de;        /* Subtext1 */
+
+    grey: #6c7086;           /* Overlay0 */
+
+    width: 600;
+}
