@@ -1,5 +1,5 @@
 general.import = [
-	"~/.dotfiles/.config/alacritty/themes/catppuccin-mocha.toml"
+	"~/.dotfiles/.config/alacritty/themes/tokyo-night.toml"
 ]
 
 [env]
@@ -13,7 +13,7 @@ opacity = 1
 
 [font]
 normal.family = "JetBrainsMonoNerdFont"
-size = 13
+size = 14
 
 [cursor]
 style = { shape = "Beam", blinking = "Never" }

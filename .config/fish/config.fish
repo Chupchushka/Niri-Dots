@@ -7,3 +7,5 @@ if status is-interactive
     # Aliases
     alias v=nvim
 end
+
+fish_add_path /home/chupchushka/.spicetify
