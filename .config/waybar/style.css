@@ -16,15 +16,15 @@ window#waybar {
 
 #cpu {
   background: @black;
-  color: @text;
-  padding: 0 10px 0 0px;
+  color: @green;
+  padding: 0 2px 0 0px;
   margin: 4px 0;
   border-radius: 0 6 6 0;
 }
 
 #memory {
   background: @black;
-  color: @text;
+  color: @peach;
   padding: 0 30px 0 15px;
   margin: 4px 0;
   border-radius: 0 6 6 0;
@@ -76,14 +76,14 @@ window#waybar {
 }
 #pulseaudio {
   background: @black;
-  color: @text;
-  padding: 0 30px 0 15px;
+  color: @teal;
+  padding: 0 15px 0 15px;
   margin: 4px 0px 4px 0;
 }
 
 #language {
   background: @black;
-  color: @text;
+  color: @red;
   padding: 0;
   margin: 4px 20 4px 0px;
   border-bottom: solid 2px @text;
@@ -100,8 +100,8 @@ window#waybar {
 }
 
 #network {
-  color: @text;
-  padding: 0 5px 0 0px;
+  color: @sapphire;
+  padding: 0 15px 0 0px;
 }
 
 #tray-expander {

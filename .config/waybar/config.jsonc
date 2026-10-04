@@ -6,7 +6,7 @@
   "height": 26,
   "modules-left": ["niri/workspaces", "clock"],
   "modules-center": ["niri/window"],
-  "modules-right": ["niri/language", "tray", "network", "pulseaudio", "cpu"],
+  "modules-right": ["niri/language", "tray", "network","pulseaudio", "group/hardware"],
   "niri/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -23,8 +23,8 @@
       "9": "9",
       "10": "0",
       "active": "󱓻",
-    },
-    "persistent-workspaces": {
+},
+   "persistent-workspaces": {
       "1": [],
       "2": [],
       "3": [],
@@ -33,17 +33,12 @@
     },
   },
 
-  "cpu": {
-    "interval": 10,
-    "format": "{}% ",
-    "max-length": 10,
-  },
   "clock": {
     "format": "{:L%A %H:%M}",
     "format-alt": "{:L%d %B W%V %Y}",
     "tooltip": false,
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select",
   },
+
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format": "{icon}",
@@ -57,25 +52,55 @@
     "spacing": 1,
   },
 
-  "pulseaudio": {
-    "format": "{icon}",
-    "on-click": "pavucontrol",
-    "on-click-right": "pamixer -t",
-    "tooltip-format": "Playing at {volume}%",
-    "scroll-step": 5,
-    "format-muted": "",
-    "format-icons": {
-      "default": ["", "", ""],
-    },
-  },
-
   "tray": {
     "icon-size": 14,
     "spacing": 17,
   },
+
   "niri/language": {
 		"format": "{}",
 		"format-en": "EN",
 		"format-ru": "RU",
   },
+
+  "pulseaudio": {
+	"format": "{volume}% {icon}",
+	"format-bluetooth": "{volume}% {icon}",
+	"format-muted": "",
+	"format-icons": {
+		"alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+		"alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+		"headphone": "",
+		"hands-free": "󰂑",
+		"headset": "",
+		"phone": "",
+		"phone-muted": "",
+		"portable": "",
+		"car": "",
+		"default": ["", ""]
+	},
+	"scroll-step": 1,
+	"on-click": "pavucontrol"
 },
+
+  "group/hardware": {
+		"orientation": "horizontal",
+		"modules": [
+			"cpu",
+			"memory"
+		]
+	},
+
+"cpu": {
+	"interval": 10,
+	"format": "{}% ",
+	"max-length": 10
+},
+
+"memory": {
+	"interval": 30,
+	"format": "{}% ",
+	"max-length": 10
+}
+
+}

@@ -55,6 +55,7 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+Void=""
 
 [username]
 show_always = true
